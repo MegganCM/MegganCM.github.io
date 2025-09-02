@@ -1,5 +1,6 @@
 body {
-    background-color: #ff8aca;
-    Background-image: url('images/gokaiger1.jpg');
-    background-size: cover;
+  background: linear-gradient(45deg, #ff57b3, #ffc9e7);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
