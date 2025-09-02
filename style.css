@@ -13,3 +13,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Bonbon", "Century Gothic", "Comic Sans";
 }
+
+a {
+  color: white;
+}
+
+a:visited {
+  text-decoration: line-through;
+  color: rgba(255,255,255,.5);
+}
+  
