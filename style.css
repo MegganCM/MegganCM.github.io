@@ -19,13 +19,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline'
+}
+
 a:visited {
   text-decoration: line-through;
   color: rgba(255,255,255,.5);
 } 
-
-a:visited:hover {
-  text-decoration: underline;
-  color: rgba(255,255,255,.5);
-}
-  
