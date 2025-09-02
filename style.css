@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&family=Short+Stack&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-
   background: linear-gradient(45deg, #ff57b3, #fc037f);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  font-family: 'Century Gothic', Sans-Serif;
+  font-family: "Short Stack", Sans-Serif;
   color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bonbon", "Century Gothic", "Comic Sans";
 }
