@@ -40,6 +40,8 @@ section.main {
   flex: 3;
   padding: 20px;
   box-sizing: border-box;
+  backgtound: #6e158f;
+  border-radius: 15px
 }
 
 /* Aside takes 25% of width */
@@ -47,6 +49,8 @@ aside {
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
+  backgtound: #6e158f;
+  border-radius: 15px
 }
 
 /* Responsive behavior for smaller screens */
