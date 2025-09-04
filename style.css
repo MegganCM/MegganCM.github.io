@@ -15,9 +15,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Bonbon", "Century Gothic", "Comic Sans";
 }
-
-display: flex;
-flex-wrap: wrap; /* Allows wrapping on smaller screens */
 a {
   color: white;
   text-decoration: none;
@@ -57,7 +54,8 @@ aside {
   body {
     flex-direction: column;
   }
-  
   section.main,
   aside {
     flex: 1 1 100%;
+  }
+}
