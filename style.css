@@ -8,7 +8,7 @@ body {
   background-size: 100% 100%;
   font-family: "Short Stack", Sans-Serif;
   color: white;
-   display: flex;
+  display: flex;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
