@@ -54,7 +54,7 @@ ul {
 }
 section.main {
   flex: 3;
-  padding: 20px;
+  padding: 30px;
   background: #ff8caf;
   border-radius: 5px
 }
