@@ -70,7 +70,7 @@ aside {
 }
  
   .move-right {
-    margin-left: 70px; /* Or you can use translateX */
+    margin-left: 80px; /* Or you can use translateX */
     /* Or, for smoother animation */
     /* transform: translateX(30px); */
 }
