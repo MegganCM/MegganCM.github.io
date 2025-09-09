@@ -74,6 +74,10 @@ aside {
     /* Or, for smoother animation */
     /* transform: translateX(30px); */
 }
+/* ✅ New class to center specific text */
+.center-text {
+  text-align: center;
+}
 
 /* Responsive behavior for smaller screens */
 @media (max-width: 768px) {
