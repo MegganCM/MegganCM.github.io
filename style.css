@@ -25,7 +25,7 @@ h1 {
 h2 {
 
   font-family: "Short Stack", "Century Gothic", "Comic Sans";
-  padding: 30px;
+  padding: 20px;
 }
 p {
     font-family: "Short Stack", "Century Gothic", "Comic Sans";
@@ -78,10 +78,10 @@ aside {
     flex: 1 1 100%;
   }
   
-.move-right {
-  margin-left: 30px; /* Or you can use translateX */
-  /* Or, for smoother animation */
-  /* transform: translateX(30px); */
+  .move-right {
+    margin-left: 30px; /* Or you can use translateX */
+    /* Or, for smoother animation */
+    /* transform: translateX(30px); */
 }
   
 
