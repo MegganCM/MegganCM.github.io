@@ -67,6 +67,12 @@ aside {
   background: #f55f8d;
   border-radius: 15px
 }
+ 
+  .move-right {
+    margin-left: 30px; /* Or you can use translateX */
+    /* Or, for smoother animation */
+    /* transform: translateX(30px); */
+}
 
 /* Responsive behavior for smaller screens */
 @media (max-width: 768px) {
@@ -77,11 +83,5 @@ aside {
   aside {
     flex: 1 1 100%;
   }
-  
-  .move-right {
-    margin-left: 30px; /* Or you can use translateX */
-    /* Or, for smoother animation */
-    /* transform: translateX(30px); */
-}
-  
+
 
