@@ -50,8 +50,8 @@ ul {
 section.main {
   flex: 3;
   padding: 20px;
-  background: #6e158f;
-  border-radius: 15px
+  background: #ff8caf;
+  border-radius: 5px
 }
 
 /* Aside takes 25% of width */
