@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg,#ffabd4,#ff0026);
+  background: linear-gradient(45deg,#ff428b,#ffb5d9);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   font-family: "Short Stack", Sans-Serif;
@@ -12,8 +12,15 @@ body {
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,h3, h4, h5, h6 {
     font-family: "Bonbon", "Century Gothic", "Comic Sans";
+
+}
+
+h2 {
+
+  font-family: "Short Stack", "Century Gothic", "Comic Sans";
+
 }
 a {
   color: white;
