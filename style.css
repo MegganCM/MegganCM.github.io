@@ -50,7 +50,7 @@ ul {
 section.main {
   flex: 3;
   padding: 20px;
-  backgtound: #6e158f;
+  background: #6e158f;
   border-radius: 15px
 }
 
@@ -59,7 +59,7 @@ aside {
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
-  backgtound: #6e158f;
+  background: #6e158f;
   border-radius: 15px
 }
 
