@@ -81,6 +81,24 @@ aside {
 .center-text {
   text-align: center;
 }
+.navigation {
+  background-color: pink; /* Pink box */
+  padding: 10px 20px;
+  display: flex; /* Horizontal layout */
+  list-style: none; /* Remove bullet points */
+  margin: 0;
+  gap: 20px; /* Space between items */
+}
+
+.navigation li a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Change link color (optional) */
+  font-weight: bold;
+}
+
+.navigation li a:hover {
+  text-decoration: underline; /* Hover effect (optional) */
+}
 
 /* Responsive behavior for smaller screens */
 @media (max-width: 768px) {
