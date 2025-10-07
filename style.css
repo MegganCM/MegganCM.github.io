@@ -11,9 +11,39 @@ body {
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
-background-image: url(‘images/heading one.png’) {
-
+/* Header section */
+header {
+  background-image: url("images/heading one.png");
+  background-size: cover;       /* fills the header nicely */
+  background-position: center;  /* centers the background image */
+  background-repeat: no-repeat;
+  text-align: center;           /* centers logo image */
+  padding: 60px 0 40px 0;       /* top and bottom space */
+  position: relative;
 }
+
+/* Logo inside the header */
+header .logo {
+  width: 300px;       /* adjust to your desired size */
+  max-width: 80%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  z-index: 2;         /* makes sure it sits above the background */
+}
+
+/* Optional: fade overlay for readability */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1); /* slight overlay */
+  z-index: 1;
+}
+
 /* Navigation bar styling */
 nav {
   border-radius: 0; /* keep it a clean rectangle */
