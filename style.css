@@ -16,11 +16,13 @@ background-image: url(‘images/heading one.jpg’) {
 }
 /* Navigation bar styling */
 nav {
-  background-color: linear-gradient (#FF006B,#FF82B8);
-  border: 1px solid #ccc;    /* Thin border around the box */
+  border-radius: 0; /* keep it a clean rectangle */
   padding: 10px 0;
   width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navigation {
@@ -55,6 +57,3 @@ nav {
   top: 0;
   z-index: 1000;
 }
-
-
-
