@@ -10,26 +10,46 @@ body {
   display: flex;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
-
 /* Header section */
 header {
-  background-image: url("images/Heading one.png");
-  background-size: cover;       /* fills the header nicely */
-  background-position: center;  /* centers the background image */
+  background-image: url("images/heading one.png");
+  background-size: cover;         /* fills the entire header */
+  background-position: center;
   background-repeat: no-repeat;
-  text-align: center;           /* centers logo image */
-  padding: 60px 0 40px 0;       /* top and bottom space */
+  background-attachment: fixed;   /* stays fixed when scrolling */
+  
+  display: flex;
+  justify-content: center;        /* centers logo horizontally */
+  align-items: center;            /* centers logo vertically */
+  
+  height: 50vh;                   /* fills 50% of the screen height */
+  width: 100%;
+  
   position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 /* Logo inside the header */
 header .logo {
-  width: 300px;       /* adjust to your desired size */
+  width: 300px;                   /* adjust size as needed */
   max-width: 80%;
   height: auto;
-  display: inline-block;
   position: relative;
-  z-index: 2;         /* makes sure it sits above the background */
+  z-index: 2;
+}
+
+/* Optional: soft overlay to improve contrast */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.05); /* subtle overlay */
+  z-index: 1;
 }
 
 /* Optional: fade overlay for readability */
