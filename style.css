@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg,#FFBFDA,#F97AB0,#DB1A6C);
+  background: linear-gradient(90deg,#FFBFDA,#F97AB0,#DB1A6C);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   font-family: "Short Stack", Sans-Serif;
@@ -11,3 +11,5 @@ body {
   display: flex;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
+background-image: url(‘images/heading one.jpg’);
+{
