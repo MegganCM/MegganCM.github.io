@@ -9,7 +9,6 @@ body {
   color: white;
   display: flex;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
-}
 header {
   background-image: url("images/heading one.png");
   background-size: 100% 100%;    /* Stretches image to fill header */
@@ -90,7 +89,56 @@ nav {
   top: 0;
   z-index: 1000;
 }
+/* === WELCOME SECTION === */
+.welcome {
+  background-image: url("images/welcome7.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 60px 0;          /* space inside the main box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* Container for text + image */
+.welcome-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1000px;
+  gap: 40px;
+}
 
+/* Text box on the left */
+.welcome-text {
+  background-color: rgba(255, 77, 153, 0.88); /* FF4D99 with 88% opacity */
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Image on the right */
+.welcome-image {
+  width: 40%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+  .welcome-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .welcome-text, .welcome-image {
+    width: 90%;
+  }
+}
 
 
