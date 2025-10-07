@@ -13,7 +13,7 @@ body {
 
 /* Header section */
 header {
-  background-image: url("images/heading one.png");
+  background-image: url("images/Heading one.png");
   background-size: cover;       /* fills the header nicely */
   background-position: center;  /* centers the background image */
   background-repeat: no-repeat;
