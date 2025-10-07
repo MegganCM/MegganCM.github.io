@@ -9,42 +9,56 @@ body {
   color: white;
   display: flex;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+/* === HEADER SECTION === */
 header {
   background-image: url("images/heading one.png");
-  background-size: 100% 100%;    /* Stretches image to fill header */
+  background-size: cover;         /* fills the header area */
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;  /* Keeps image still when scrolling */
+  background-attachment: fixed;   /* stays fixed when scrolling */
   
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  height: 50vh;                  /* Adjust height of header (fills top space) */
+
+  height: 45vh;                   /* slightly shorter for balance */
   width: 100%;
-  
   position: relative;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-/* Logo */
+/* Logo styling */
 header .logo {
-  width: 300px;
-  max-width: 80%;
+  width: 200px;                   /* smaller, readable size */
+  max-width: 30%;                 /* prevents stretching on large screens */
   height: auto;
+  display: block;
   position: relative;
   z-index: 2;
 }
 
-/* Optional soft overlay for readability */
+/* Optional subtle overlay for contrast */
 header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05); /* light tint */
   z-index: 1;
+}
+
+/* Optional responsiveness */
+@media (max-width: 768px) {
+  header {
+    height: 35vh;                 /* shorter on mobile */
+  }
+
+  header .logo {
+    width: 150px;
+    max-width: 50%;
+  }
 }
 /* Navigation bar styling */
 nav {
