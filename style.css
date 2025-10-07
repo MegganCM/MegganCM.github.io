@@ -105,34 +105,35 @@ nav {
 }
 /* === WELCOME SECTION === */
 .welcome {
+  display: flex;
+  justify-content: center;   /* centers the main box */
+  align-items: center;
+  padding: 60px 0;
+}
+
+/* The main box */
+.welcome-content {
   background-image: url("images/welcome7.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 60px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-/* Container for text + image */
-.welcome-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1); /* optional subtle overlay */
-  width: 85%;             /* keeps it from touching edges */
-  max-width: 1100px;      /* limit total width */
-  margin: 0 auto;         /* center horizontally */
-  padding: 40px;          /* space inside */
+
+  width: 85%;
+  max-width: 1100px;
+  padding: 40px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  overflow: hidden;       /* keeps image inside the box */
+  overflow: hidden;           /* keeps everything, including bg, inside the box */
+  margin: 0 auto;             /* centers horizontally */
 }
 
-/* Pink text box (left side) */
+/* Pink text box (left) */
 .welcome-text {
-  background-color: rgba(255, 77, 153, 0.88); /* FF4D99 w/ 88% opacity */
+  background-color: rgba(255, 77, 153, 0.88); /* FF4D99 at 88% opacity */
   color: white;
   padding: 30px;
   border-radius: 12px;
@@ -140,17 +141,17 @@ nav {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Sprite image (right side) */
+/* Sprite image (right) */
 .welcome-image {
-  width: 50%;             /* takes half of container */
-  max-width: 500px;       /* keeps it from being too large */
+  width: 45%;
+  max-width: 500px;
   height: auto;
-  object-fit: contain;    /* fits inside the box without overflow */
-  align-self: center;
+  object-fit: contain;
   display: block;
+  align-self: center;
 }
 
-/* Responsive design */
+/* Responsive layout */
 @media (max-width: 900px) {
   .welcome-content {
     flex-direction: column;
@@ -158,7 +159,7 @@ nav {
     gap: 20px;
   }
 
-  .welcome-text, 
+  .welcome-text,
   .welcome-image {
     width: 90%;
   }
