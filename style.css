@@ -2,14 +2,59 @@
 
 body {
   margin: 0;
-  padding: 0;
-  background: linear-gradient(90deg,#FFBFDA,#F97AB0,#DB1A6C);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  font-family: "Short Stack", Sans-Serif;
+  font-family: Short stack, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #FFBFDA, #F97AB0, #DB1A6C);
+  background-attachment: fixed; /* Keeps gradient steady while scrolling */
+  min-height: 100vh;
   color: white;
   display: flex;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
-background-image: url(‘images/heading one.jpg’);
-{
+
+background-image: url(‘images/heading one.jpg’) {
+
+}
+/* Navigation bar styling */
+nav {
+  background-color: linear-gradient (#FF006B,#FF82B8);
+  border: 1px solid #ccc;    /* Thin border around the box */
+  padding: 10px 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centers the links horizontally */
+  gap: 40px; /* Space between items */
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.navigation a:hover {
+  background-color: #ddd;
+}
+
+/* Optional: keep nav fixed at the top when scrolling */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+
