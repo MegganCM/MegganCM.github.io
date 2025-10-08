@@ -168,82 +168,7 @@ nav {
     max-width: 350px;
   }
 }
-/* === ABOUT LINK BOX SECTION === */
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 0;
-  background: none; /* no background on the section itself */
-}
-
-/* The clickable box */
-.about-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  max-width: 800px;
-  height: 300px;
-  background-image: url("images/MEGGYWEGGY1.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Overlay for better text contrast */
-.about-box::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  transition: background 0.3s ease;
-}
-
-/* Text inside the box */
-.about-box h2 {
-  position: relative;
-  z-index: 2;
-  color: white;
-  font-size: 2.5rem;
-  font-family: "Bonbon", cursive;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
-}
-
-/* Hover effect */
-.about-box:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
-}
-
-.about-box:hover::before {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.about-box:hover h2 {
-  transform: scale(1.05);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .about-box {
-    width: 90%;
-    height: 220px;
-  }
-
-  .about-box h2 {
-    font-size: 2rem;
-  }
-}
-
-/* === ABOUT SECTION BOX (same size as welcome box) === */
+/* === ABOUT SECTION (Under Welcome Box) === */
 .about {
   display: flex;
   justify-content: center;
@@ -251,73 +176,58 @@ nav {
   padding: 60px 0;
 }
 
-/* Match the welcome-content style */
+/* Big outer box */
 .about-content {
-  background-image: url("images/MEGGYWEGGY.jpeg");
+  background-image: url("images/MEGGYWEGGY.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   width: 85%;
   max-width: 1100px;
-  padding: 40px;
+  min-height: 500px; /* same height as welcome box */
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: flex-start; /* align small box to the left */
+  align-items: center;
   overflow: hidden;
   margin: 0 auto;
-
-  /* Add this to ensure the box height matches welcome-content visually */
-  min-height: 500px; /* you can adjust this number if needed */
 }
 
-/* Pink inner box */
-.about-box {
-  background-color: rgba(255, 77, 153, 0.88);
+/* Small pink box on the left */
+.about-text-box {
+  background-color: rgba(255, 77, 153, 0.88); /* same pink as welcome-text */
+  color: white;
   padding: 40px 60px;
   border-radius: 12px;
+  margin-left: 50px; /* space from left edge */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  text-align: center;
 }
 
-/* Button styling */
-.about-button {
-  display: inline-block;
-  background-color: white;
-  color: #ff4d99;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.4rem;
-  padding: 14px 32px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+.about-text-box h2 {
+  font-size: 2rem;
+  font-family: "Bonbon", cursive;
+  margin: 0;
 }
 
-.about-button:hover {
-  background-color: #ff4d99;
-  color: white;
-  transform: scale(1.05);
-}
-
-/* Responsive layout */
+/* Responsive design */
 @media (max-width: 900px) {
   .about-content {
-    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     min-height: 350px;
   }
 
-  .about-box {
-    padding: 25px 35px;
+  .about-text-box {
+    margin: 0;
+    width: 85%;
+    padding: 25px 30px;
   }
 
-  .about-button {
-    font-size: 1.2rem;
+  .about-text-box h2 {
+    font-size: 1.6rem;
   }
 }
-  .about-box {
-    padding: 20px 30px;
-  }
 }
