@@ -168,6 +168,81 @@ nav {
     max-width: 350px;
   }
 }
+/* === ABOUT LINK BOX SECTION === */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  background: none; /* no background on the section itself */
+}
+
+/* The clickable box */
+.about-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  max-width: 800px;
+  height: 300px;
+  background-image: url("images/MEGGYWEGGY1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Overlay for better text contrast */
+.about-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  transition: background 0.3s ease;
+}
+
+/* Text inside the box */
+.about-box h2 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Bonbon", cursive;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.about-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.about-box:hover::before {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.about-box:hover h2 {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-box {
+    width: 90%;
+    height: 220px;
+  }
+
+  .about-box h2 {
+    font-size: 2rem;
+  }
+}
+
 /* === ABOUT SECTION BOX (same size as welcome box) === */
 .about {
   display: flex;
@@ -176,9 +251,9 @@ nav {
   padding: 60px 0;
 }
 
-/* Outer box — same width and structure as welcome-content */
+/* Match the welcome-content style */
 .about-content {
-  background-image: url("images/MEGGYWEGGY.png");
+  background-image: url("images/MEGGYWEGGY.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -194,14 +269,18 @@ nav {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   margin: 0 auto;
+
+  /* Add this to ensure the box height matches welcome-content visually */
+  min-height: 500px; /* you can adjust this number if needed */
 }
 
-/* Inner pink box (matches welcome-text color) */
+/* Pink inner box */
 .about-box {
   background-color: rgba(255, 77, 153, 0.88);
-  padding: 30px 50px;
+  padding: 40px 60px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
 }
 
 /* Button styling */
@@ -211,9 +290,9 @@ nav {
   color: #ff4d99;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2rem;
-  padding: 12px 24px;
-  border-radius: 8px;
+  font-size: 1.4rem;
+  padding: 14px 32px;
+  border-radius: 10px;
   transition: all 0.3s ease;
 }
 
@@ -226,11 +305,18 @@ nav {
 /* Responsive layout */
 @media (max-width: 900px) {
   .about-content {
-    flex-direction: column;
-    text-align: center;
     width: 90%;
+    min-height: 350px;
   }
 
+  .about-box {
+    padding: 25px 35px;
+  }
+
+  .about-button {
+    font-size: 1.2rem;
+  }
+}
   .about-box {
     padding: 20px 30px;
   }
