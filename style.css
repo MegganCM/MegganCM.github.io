@@ -12,7 +12,7 @@ body {
 }
 /* === HEADER SECTION === */
 header {
-  background-image: url("images/Heading one.png");
+  background-image: url("images/heading one.png");
   background-size: cover;         /* fills the header area */
   background-position: center;
   background-repeat: no-repeat;
@@ -166,5 +166,79 @@ nav {
 
   .welcome-image {
     max-width: 350px;
+  }
+}
+/* === ABOUT LINK BOX SECTION === */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  background: none; /* no background on the section itself */
+}
+
+/* The clickable box */
+.about-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  max-width: 800px;
+  height: 300px;
+  background-image: url("images/MEGGYWEGGY1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Overlay for better text contrast */
+.about-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  transition: background 0.3s ease;
+}
+
+/* Text inside the box */
+.about-box h2 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Bonbon", cursive;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.about-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.about-box:hover::before {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.about-box:hover h2 {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-box {
+    width: 90%;
+    height: 220px;
+  }
+
+  .about-box h2 {
+    font-size: 2rem;
   }
 }
