@@ -7,8 +7,6 @@ body {
   background-attachment: fixed; /* Keeps gradient steady while scrolling */
   min-height: 100vh;
   color: white;
-  display: flex;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 /* === HEADER SECTION === */
 header {
