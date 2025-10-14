@@ -362,3 +362,14 @@ nav {
     height: 220px;
   }
 }
+.year.two {
+  text-align: center;         /* centers inline elements like the image */
+  margin-top: 40px;           /* optional spacing */
+}
+
+.year.two img {
+  display: block;
+  margin: 0 auto;             /* ensures it's centered even if block-level */
+  max-width: 100%;            /* keeps it responsive */
+  height: auto;
+}
