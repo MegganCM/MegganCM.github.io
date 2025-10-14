@@ -473,3 +473,13 @@ nav {
 .yearone-page .section-header h3 {
   font-size: 2rem;
 }
+.year-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.year-one img {
+  display: block;
+  margin: 0 auto;
+}
