@@ -373,3 +373,43 @@ nav {
   max-width: 100%;            /* keeps it responsive */
   height: auto;
 }
+/* === YEAR TWO SECTION === */
+.year.two {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.year.two img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* The rectangular header box */
+.year-header {
+  background-image: url("images/YearHeader.png");
+  background-size: cover;          /* fills the box */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;                      /* width of box relative to page */
+  max-width: 800px;                /* limits it on large screens */
+  height: 120px;                   /* adjust to your liking */
+  margin: 0 auto 30px auto;        /* centers it horizontally + adds bottom space */
+  border-radius: 16px;             /* optional rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* subtle depth */
+}
+
+/* The “Year Two” text inside */
+.year-header h1 {
+  color: white;                    /* stands out on bg image */
+  font-family: "Bonbon", cursive;  /* matches your site’s vibe */
+  font-size: 2.5rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3); /* improves readability */
+  margin: 0;
+}
