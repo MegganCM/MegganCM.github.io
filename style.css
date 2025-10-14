@@ -388,7 +388,7 @@ nav {
 
 /* The rectangular header box */
 .year-header {
-  background-image: url("images/YearHeader.png");
+  background-image: url("images/YearHeaders.png");
   background-size: cover;          /* fills the box */
   background-position: center;
   background-repeat: no-repeat;
