@@ -364,7 +364,7 @@ nav {
 
 .art-item img {
   width: 150px; /* smaller image size */
-  height: 240px;
+  height: 150px;
   object-fit: cover;
   border-radius: 12px;
 }
