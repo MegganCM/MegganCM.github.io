@@ -524,7 +524,3 @@ nav {
   display: block;
   margin: 0 auto;
 }
-  .section-header h2,
-.section-header h3 {
-  margin-top: 60px; /* adds space above each section heading */
-}
