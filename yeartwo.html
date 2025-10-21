@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="style.css" />
+
 	</head>
 	<body class="artwork-page">
 		<header>
@@ -32,6 +33,36 @@
   <img src="images/Meggan Coronel Marca_Resume_25.jpg" alt="Resume Image" width="800"/>
 </section>
 
+<div class="carousel-container">
+  <button class="nav prev" aria-label="Previous">&#10094;</button>
+  <div class="carousel-track" id="carousel-track">
+    <img src="images/carousel1/meggan.1ed.jpg" alt="Image 1">
+    <img src="images/carousel1/meggan.2ed.jpg" alt="Image 2">
+    <img src="images/carousel1/meggan.3ed.jpg" alt="Image 3">
+    <img src="images/carousel1/meggan.4ed.jpg" alt="Image 4">
+    <img src="images/carousel1/meggan.5ed.jpg" alt="Image 4">
+  </div>
+  <button class="nav next" aria-label="Next">&#10095;</button>
+</div>
+<script>
+  const track = document.getElementById('carousel-track');
+  const slides = Array.from(track.children);
+  const prev = document.querySelector('.nav.prev');
+  const next = document.querySelector('.nav.next');
+
+  function slideWidth() { return track.clientWidth; }
+  function index() { return Math.round(track.scrollLeft / slideWidth()); }
+  function goTo(i) {
+    const count = slides.length;
+    const target = (i + count) % count;
+    track.scrollTo({ left: target * slideWidth(), behavior: 'smooth' });
+  }
+
+  prev.addEventListener('click', () => goTo(index() - 1));
+  next.addEventListener('click', () => goTo(index() + 1));
+  window.addEventListener('resize', () => goTo(index()));
+</script>
+
 <section class="Print">
   <div class="section-header">
     <h2>ART 2410 Basic Studio: Printmaking</h2>
@@ -59,4 +90,4 @@
     </section>
 
 	</body>
-</html>>
+</html>
