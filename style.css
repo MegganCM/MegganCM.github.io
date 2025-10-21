@@ -281,8 +281,8 @@ nav {
   border-radius: 12px;
   width: 45%;                    /* same ratio as welcome-text */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  text-decoration: none
-  display; block
+  text-decoration: none;
+  display: block;
 }
 
 .about-text-box h2 {
