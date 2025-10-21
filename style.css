@@ -390,7 +390,9 @@ nav {
   transform: scale(1.05);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
-
+.art-gallery img:last-child:nth-child(odd) {
+  grid-column: 1 / -1; /* makes last odd image span the full width */
+  justify-self: center;
 /* Responsive — one column on smaller screens */
 @media (max-width: 700px) {
   .art-gallery {
