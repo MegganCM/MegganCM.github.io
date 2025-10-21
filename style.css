@@ -252,54 +252,54 @@ nav {
   padding: 60px 0;
 }
 
-/* Larger, centered background box */
+/* Matches the welcome-content box layout */
 .about-content {
   background-image: url("images/MEGGYWEGGY.jpg");
-  background-size: cover;
+  background-size: cover;          /* fills box just like welcome */
   background-position: center;
   background-repeat: no-repeat;
 
-  width: 80%;             /* wider than welcome box */
-  max-width: 1300px;      /* still keeps things balanced on large screens */
-  min-height: 520px;      /* same or slightly taller than welcome box */
+  display: flex;
+  justify-content: flex-start;     /* text box on the left */
+  align-items: center;
+
+  width: 85%;                      /* same as .welcome-content */
+  max-width: 1100px;               /* same max width */
+  padding: 40px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: flex-start;  /* small box stays on the left */
-  align-items: center;
   overflow: hidden;
-  margin: 0 auto;         /* centers the box horizontally */
+  margin: 0 auto;
 }
 
-/* Small pink box on the left */
+/* Small pink text box inside */
 .about-text-box {
-  background-color: rgba(255, 77, 153, 0.88); /* same pink as welcome-text */
+  background-color: rgba(255, 77, 153, 0.88);
   color: white;
-  padding: 40px 60px;
+  padding: 30px;
   border-radius: 12px;
-  margin-left: 60px; /* distance from the left side of the big box */
+  width: 45%;                      /* same text box width as welcome-text */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* Heading style */
 .about-text-box h2 {
   font-size: 2.2rem;
   font-family: "Bonbon", cursive;
   margin: 0;
 }
 
-/* Responsive design for mobile */
+/* Responsive layout — identical to welcome section */
 @media (max-width: 900px) {
   .about-content {
     flex-direction: column;
-    justify-content: center;
     text-align: center;
+    gap: 20px;
     width: 90%;
-    min-height: 380px;
   }
 
   .about-text-box {
-    margin: 0;
-    width: 85%;
+    width: 90%;
     padding: 25px 30px;
   }
 
