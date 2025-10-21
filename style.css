@@ -278,8 +278,7 @@ nav {
   background-color: rgba(255, 77, 153, 0.88);
   color: white;
   padding: 30px;
-  border-radius: 12px;
-  width: 45%;                    /* same ratio as welcome-text */
+  border-radius: 12px;                 /* same ratio as welcome-text */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   text-decoration: none;
   display: block;
