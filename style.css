@@ -259,7 +259,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
 
-  width: 95%;             /* wider than welcome box */
+  width: 80%;             /* wider than welcome box */
   max-width: 1300px;      /* still keeps things balanced on large screens */
   min-height: 520px;      /* same or slightly taller than welcome box */
   border-radius: 16px;
