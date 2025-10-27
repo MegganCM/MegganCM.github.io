@@ -610,3 +610,119 @@ nav {
 .lightbox .close:hover {
   color: #ff80bf;
 }
+/* === ABOUT ME PAGE === */
+.aboutme-page {
+  text-align: center;
+  color: white;
+}
+
+/* === Header box for “About Me” and h2 === */
+.aboutme-page h1,
+.aboutme-page h2 {
+  display: inline-block;
+  background-image: url("images/YearsHeaders.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 40px 80px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: "Bonbon", cursive;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  margin: 40px auto;
+}
+
+/* === Main image (MegganCM_internship.jpg) === */
+.aboutme-page img[src*="MegganCM_internship.jpg"] {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 500px;  /* medium size */
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* === Paragraph box under internship image === */
+.aboutme-page p:first-of-type {
+  background-color: rgba(255, 0, 107, 0.45); /* #FF006B at 45% opacity */
+  color: white;
+  width: 70%;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-family: "Short Stack", sans-serif;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* === MegganCM_Head.png (smaller image) === */
+.aboutme-page img[src*="MegganCM_Head.png"] {
+  display: block;
+  margin: 20px auto 40px auto;
+  width: 25%;
+  height: auto;
+  opacity: 0.9;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === Ecua.jpg (medium centered image) === */
+.aboutme-page img[src*="Ecua.jpg"] {
+  display: block;
+  margin: 40px auto 20px auto;
+  max-width: 500px;
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* === Paragraph box under Ecua.jpg === */
+.aboutme-page img[src*="Ecua.jpg"] + p {
+  background-color: rgba(255, 0, 107, 0.45);
+  color: white;
+  width: 70%;
+  max-width: 800px;
+  margin: 20px auto 60px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-family: "Short Stack", sans-serif;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+/* === Subtle Glow Effects for About Me Page === */
+
+/* Glow for pink text boxes (paragraphs) */
+.aboutme-page p:first-of-type:hover,
+.aboutme-page img[src*="Ecua.jpg"] + p:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 
+              0 0 40px rgba(255, 0, 107, 0.25);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+/* Glow for main images */
+.aboutme-page img[src*="MegganCM_internship.jpg"]:hover,
+.aboutme-page img[src*="MegganCM_Head.png"]:hover,
+.aboutme-page img[src*="Ecua.jpg"]:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5), 
+              0 0 40px rgba(255, 0, 107, 0.35);
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+
+/* Glow for header boxes (“About Me” and h2) */
+.aboutme-page h1:hover,
+.aboutme-page h2:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5), 
+              0 0 40px rgba(255, 0, 107, 0.3);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
