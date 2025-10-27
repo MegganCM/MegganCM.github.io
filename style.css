@@ -473,7 +473,8 @@ nav {
   width: 80%;
   max-width: 800px;
   height: 120px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 45px auto;
+  margin-top: 45px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
@@ -538,6 +539,7 @@ nav {
     margin: 0 auto;
     overflow: hidden;
     border-radius: 16px;
+    margin-bottom:40px;
   }
 
   .carousel-track {
