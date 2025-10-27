@@ -58,6 +58,37 @@
     <img src="images/tifa.heic" alt="Painting 6" width="300"/>
   </div>
 </section>
+		<!-- Lightbox modal -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" />
+</div>
+
+<script>
+  // Get all images inside .art-gallery and .year-one
+  const galleryImages = document.querySelectorAll('.art-gallery img, .year-one img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.close');
+
+  galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+    });
+  });
+
+  // Close lightbox when clicking X or background
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
 		
   </body>
 </html>
