@@ -44,6 +44,7 @@
   </div>
   <button class="nav next" aria-label="Next">&#10095;</button>
 </div>
+	
 <script>
   const track = document.getElementById('carousel-track');
   const slides = Array.from(track.children);
@@ -88,6 +89,43 @@
   	width="500"/>
       </div>
     </section>
+		<!-- Lightbox modal -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" />
+</div>
+
+<script>
+  // Select all images in art galleries, year-two section, and carousel
+  const images = document.querySelectorAll(
+    '.art-gallery img, .year.two img, .carousel-track img'
+  );
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.close');
+
+  // Open clicked image in lightbox
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+    });
+  });
+
+  // Close the lightbox when clicking the X
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  // Close when clicking outside the image
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
 
 	</body>
 </html>
