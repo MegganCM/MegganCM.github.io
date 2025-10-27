@@ -574,3 +574,38 @@ nav {
   .nav.prev { left: 10px; }
   .nav.next { right: 10px; }
   .nav:hover { background: rgba(0,0,0,0.6); }
+/* === LIGHTBOX POPUP === */
+.lightbox {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 2000;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  cursor: default;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2100;
+  transition: color 0.3s ease;
+}
+
+.lightbox .close:hover {
+  color: #ff80bf;
+}
