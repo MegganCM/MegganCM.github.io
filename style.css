@@ -632,3 +632,33 @@ nav {
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
 }
+.ab {
+        text-align: center;
+        margin: 60px auto;
+        max-width: 800px;
+      }
+
+      .ab img {
+        display: block;
+        margin: 20px auto;
+        width: 250px;
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+      }
+
+      .ab h1,
+      .ab h2 {
+        background-color: #f5f5f5;
+        padding: 12px;
+        border-radius: 8px;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      .ab p {
+        line-height: 1.6;
+        font-size: 1rem;
+        text-align: justify;
+        padding: 0 20px;
+      }
+      
