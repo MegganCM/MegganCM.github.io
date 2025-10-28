@@ -104,8 +104,40 @@
 	width="300"/>
 	<img src="images/IMG_9181.heic" 
 	width="300"/>
+  </div>
+    </section>
 
+  <!-- Lightbox modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+    </div>
 
-</section>
-	</body>
+    <script>
+      // Get all images after nav (in .artsy sections)
+      const galleryImages = document.querySelectorAll(".artsy img");
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const closeBtn = document.querySelector(".close");
+
+      galleryImages.forEach((img) => {
+        img.addEventListener("click", () => {
+          lightbox.style.display = "flex";
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+        });
+      });
+
+      // Close when clicking X or background
+      closeBtn.addEventListener("click", () => {
+        lightbox.style.display = "none";
+      });
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          lightbox.style.display = "none";
+        }
+      });
+    </script>
+  </body>
 </html>
