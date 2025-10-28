@@ -702,3 +702,12 @@ nav {
   text-align: center;
   margin: 20px 0;
 }
+* Glow animation for clickable artwork images */
+.art-item a img {
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  border-radius: 10px;
+}
+
+.art-item a img:hover {
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.7)
+  transform: scale(1.05); /* gentle zoom */
