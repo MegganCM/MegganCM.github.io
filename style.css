@@ -668,7 +668,7 @@ nav {
   line-height: 1.6;
   font-size: 1rem;
   text-align: justify;
-  color: #222; /* optional — adjust if text contrast is low */
+  color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px;
 }
 .artsy {
