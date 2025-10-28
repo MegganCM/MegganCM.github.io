@@ -711,3 +711,37 @@ nav {
 .art-item a img:hover {
   box-shadow: 0 0 20px rgba(255, 105, 180, 0.7)
   transform: scale(1.05); /* gentle zoom */
+  /* === YEAR ONE SECTION HEADERS === */
+.year-one .section-header,
+.art1010 .section-header,
+.art2310 .section-header {
+  background-image: url("images/YearHeaders.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 80%;
+  max-width: 800px;
+  margin: 40px auto 20px auto;
+  padding: 20px;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the text inside the header box */
+.section-header h1,
+.section-header h2,
+.section-header h3 {
+  color: white;
+  font-family: "Bonbon", cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
