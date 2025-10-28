@@ -487,6 +487,15 @@ nav {
   text-shadow: 0 2px 6px rgba(0,0,0,0.3);
   margin: 0;
 }
+/* === EXTEND SECTION HEADER STYLES TO h3 AND h4 === */
+.artwork-page .section-header h3,
+.artwork-page .section-header h4 {
+  color: white;
+  font-family: "Bonbon", cursive;
+  font-size: 2.2rem; /* slightly smaller for hierarchy */
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
 /* === SECTION HEADERS (Only for Year One page) === */
 .yearone-page .section-header {
   background-image: url("images/YearHeader.png");
