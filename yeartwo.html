@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body class="artwork-page">
     <header>
       <img src="images/MegganCM_Head.png" width="500" />
@@ -43,37 +44,41 @@
           <img src="images/2p.HEIC" alt="Image 2" />
           <img src="images/3p.HEIC" alt="Image 3" />
           <img src="images/4p.HEIC" alt="Image 4" />
-          <img src="images/5p.HEIC" alt="Image 5" />
-          <img src="images/6p.HEIC" alt="Image 6" />
-          <img src="images/7p.HEIC" alt="Image 7" />
+          <img src="images/5p.HEIC" alt="Image 4" />
+          <img src="images/6p.HEIC" alt="Image 4" />
+          <img src="images/7p.HEIC" alt="Image 4" />
         </div>
         <button class="nav next" aria-label="Next">&#10095;</button>
       </div>
 
       <script>
-        const track = document.getElementById('carousel-track');
+        const track = document.getElementById("carousel-track");
         const slides = Array.from(track.children);
-        const prev = document.querySelector('.nav.prev');
-        const next = document.querySelector('.nav.next');
+        const prev = document.querySelector(".nav.prev");
+        const next = document.querySelector(".nav.next");
 
-        function slideWidth() { return track.clientWidth; }
-        function index() { return Math.round(track.scrollLeft / slideWidth()); }
+        function slideWidth() {
+          return track.clientWidth;
+        }
+        function index() {
+          return Math.round(track.scrollLeft / slideWidth());
+        }
         function goTo(i) {
           const count = slides.length;
           const target = (i + count) % count;
-          track.scrollTo({ left: target * slideWidth(), behavior: 'smooth' });
+          track.scrollTo({ left: target * slideWidth(), behavior: "smooth" });
         }
 
-        prev.addEventListener('click', () => goTo(index() - 1));
-        next.addEventListener('click', () => goTo(index() + 1));
-        window.addEventListener('resize', () => goTo(index()));
+        prev.addEventListener("click", () => goTo(index() - 1));
+        next.addEventListener("click", () => goTo(index() + 1));
+        window.addEventListener("resize", () => goTo(index()));
       </script>
 
       <div class="art-gallery">
-        <img src="images/Pastora.JPG" alt="Artwork 2" />
-        <img src="images/fairy.HEIC" alt="Artwork 3" />
-        <img src="images/moongirl.HEIC" alt="Artwork 4" />
-        <img src="images/woodprint.HEIC" alt="Artwork 5" />
+        <img src="images/Pastora.JPG" alt="Artwork 2" width="200" />
+        <img src="images/fairy.HEIC" alt="Artwork 3" width="200" />
+        <img src="images/moongirl.HEIC" alt="Artwork 4" width="500" />
+        <img src="images/woodprint.HEIC" alt="Artwork 5" width="500" />
       </div>
     </section>
 
@@ -82,14 +87,14 @@
         <h3>ART 2010 Illustration</h3>
       </div>
       <div class="art-gallery">
-        <img src="images/Deathnote.HEIC" alt="Artwork 2" />
-        <img src="images/MegganCoronelMarca_Greed_11x15_2025.jpg" alt="Artwork 3" />
-        <img src="images/MegganCoronelMarca_Duty_9x12_2025.jpg" alt="Artwork 4" />
-		<img src="OnePageComic_ToneSketch.pdf" alt="Artwork 5" />
-		<img src="RabbitGirl_TurnArounds_042425.pdf" alt="Artwork 6"/>
-		<img src="Tigre_Face_042425.pdf " alt="Artwork 7" />
-		<img src="RabbitGirl_Facepainted_042425.pdf" alt="Artwork 8"/>
-      
+        <img src="images/Deathnote.HEIC" alt="Artwork 2" width="200" />
+        <img src="images/MegganCoronelMarca_Greed_11x15_2025.jpg" alt="Artwork 3" width="200" />
+        <img src="images/MegganCoronelMarca_Duty_9x12_2025.jpg" alt="Artwork 4" width="200" />
+        <embed src="images/OnePageComic_ToneSketch.pdf" type="application/pdf" class="pdf-viewer" />
+        <embed src="images/Tigre_TurnArounds_042425.pdf" type="application/pdf" class="pdf-viewer" />
+        <embed src="images/RabbitGirl_TurnArounds_042425.pdf" type="application/pdf" class="pdf-viewer" />
+        <embed src="images/Tigre_Face_042425.pdf" type="application/pdf" class="pdf-viewer" />
+        <embed src="images/RabbitGirl_Facepainted_042425.pdf" type="application/pdf" class="pdf-viewer" />
       </div>
     </section>
 
@@ -98,28 +103,28 @@
         <h4>Graphic Design: Process and Thinking</h4>
       </div>
       <div class="art-gallery">
-        <img src="images/DOC019.jpg" alt="Artwork 4" />
-        <img src="images/M.HEIC" alt="Artwork 5" />
-        <img src="images/CoronelMarca_240925_Letter.gif" alt="Artwork" />
-        <img src="images/CORONELMARCA_ART2110_LETTER.gif" alt="Artwork" />
-        <img src="images/CoronelMarca_letter_240907.gif" alt="Artwork" />
-        <img src="images/CoronelMarca_letterform_Gif9.gif" alt="Artwork" />
-        <img src="images/CoronelMarca_LetterSquareGif_02.gif" alt="Artwork" />
-        <img src="images/Coronelmarca_letterform_gif10.gif" alt="Artwork" />
-        <img src="images/CoronelMarca_Letterform_GIF3.gif" alt="Artwork 6" />
-
-        <!-- PDFs as clickable thumbnails -->
-        <a href="images/DOC002.pdf" target="_blank" class="pdf-link"><img src="images/pdf-thumbnail.jpg" alt="DOC002 PDF" /></a>
-        <a href="images/DOC011.pdf" target="_blank" class="pdf-link"><img src="images/pdf-thumbnail.jpg" alt="DOC011 PDF" /></a>
-        <a href="images/DOC013.pdf" target="_blank" class="pdf-link"><img src="images/pdf-thumbnail.jpg" alt="DOC013 PDF" /></a>
-        <a href="images/DOC014.pdf" target="_blank" class="pdf-link"><img src="images/pdf-thumbnail.jpg" alt="DOC014 PDF" /></a>
-        <a href="images/CoronelMarca_Figureground_Brief03.pdf" target="_blank" class="pdf-link"><img src="images/pdf-thumbnail.jpg" alt="Figureground Brief PDF" /></a>
-        <a href="images/CoronelMarca_LetterSquare_Final.pdf" target="_blank" class="pdf-link"><img src="images/pdf-thumbnail.jpg" alt="LetterSquare Final PDF" /></a>
-        <a href="images/CoronelMarca_3words_Typeface.pdf" target="_blank" class="pdf-link"><img src="images/pdf-thumbnail.jpg" alt="3 Words Typeface PDF" /></a>
-        <a href="images/CoronelMarca_TypefaceBook_FinalL.pdf" target="_blank" class="pdf-link"><img src="images/pdf-thumbnail.jpg" alt="Typeface Book PDF" /></a>
-        <a href="images/CoronelMarca_Above_Below_Screenprint copy.pdf" target="_blank" class="pdf-link"><img src="images/pdf-thumbnail.jpg" alt="Above Below Screenprint PDF" /></a>
-        <a href="images/CoronelMarca_Letterform_03.pdf" target="_blank" class="pdf-link"><img src="images/pdf-thumbnail.jpg" alt="Letterform 03 PDF" /></a>
-        <a href="images/CoronelMarca_ProcessBooks_1-3.pdf" target="_blank" class="pdf-link"><img src="images/pdf-thumbnail.jpg" alt="Process Books PDF" /></a>
+        <img src="images/" alt="Artwork 3" width="200" />
+        <img src="images/DOC002.pdf" alt="Artwork 6" width="200" />
+        <img src="images/DOC011.pdf" alt="Artwork 6" width="200" />
+        <img src="images/DOC013.pdf" alt="Artwork 6" width="200" />
+        <img src="images/DOC014.pdf" alt="Artwork 6" width="200" />
+        <img src="images/DOC019.jpg" alt="Artwork 4" width="200" />
+        <img src="images/M.HEIC" alt="Artwork 5" width="200" />
+        <img src="images/CoronelMarca_240925_Letter.gif" alt="Artwork" width="200" />
+        <img src="images/CoronelMarca_240925_Letter.gif" alt="Artwork" width="200" />
+        <img src="images/CORONELMARCA_ART2110_LETTER.gif" alt="Artwork" width="200" />
+        <img src="images/CoronelMarca_letter_240907.gif" alt="Artwork" width="200" />
+        <img src="images/CoronelMarca_letterform_Gif9.gif" alt="Artwork" width="200" />
+        <img src="images/CoronelMarca_LetterSquareGif_02.gif" alt="Artwork" width="200" />
+        <img src="images/Coronelmarca_letterform_gif10.gif" alt="Artwork" width="200" />
+        <img src="images/CoronelMarca_Letterform_GIF3.gif" alt="Artwork 6" width="200" />
+        <embed src="images/CoronelMarca_Figureground_Brief03.pdf" type="application/pdf" class="pdf-viewer" />
+        <embed src="images/CoronelMarca_LetterSquare_Final.pdf" type="application/pdf" class="pdf-viewer" />
+        <embed src="images/CoronelMarca_3words_Typeface.pdf" type="application/pdf" class="pdf-viewer" />
+        <embed src="images/CoronelMarca_TypefaceBook_FinalL.pdf" type="application/pdf" class="pdf-viewer" />
+        <img src="images/CoronelMarca_Above_Below_Screenprint copy.pdf" alt="Artwork 6" width="200" />
+        <img src="images/CoronelMarca_Letterform_03.pdf" alt="Artwork 6" width="200" />
+        <embed src="images/CoronelMarca_ProcessBooks_1-3.pdf" type="application/pdf" class="pdf-viewer" />
       </div>
     </section>
 
@@ -130,28 +135,33 @@
     </div>
 
     <script>
+      // Select all images in art galleries, year-two section, and carousel
       const images = document.querySelectorAll(
-        '.art-gallery img, .year.two img, .carousel-track img'
+        ".art-gallery img, .year.two img, .carousel-track img"
       );
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      const closeBtn = document.querySelector('.close');
 
-      images.forEach(img => {
-        img.addEventListener('click', () => {
-          lightbox.style.display = 'flex';
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const closeBtn = document.querySelector(".close");
+
+      // Open clicked image in lightbox
+      images.forEach((img) => {
+        img.addEventListener("click", () => {
+          lightbox.style.display = "flex";
           lightboxImg.src = img.src;
           lightboxImg.alt = img.alt;
         });
       });
 
-      closeBtn.addEventListener('click', () => {
-        lightbox.style.display = 'none';
+      // Close the lightbox when clicking the X
+      closeBtn.addEventListener("click", () => {
+        lightbox.style.display = "none";
       });
 
-      lightbox.addEventListener('click', e => {
+      // Close when clicking outside the image
+      lightbox.addEventListener("click", (e) => {
         if (e.target === lightbox) {
-          lightbox.style.display = 'none';
+          lightbox.style.display = "none";
         }
       });
     </script>
