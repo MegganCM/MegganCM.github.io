@@ -653,12 +653,21 @@ nav {
         border-radius: 8px;
         display: inline-block;
         margin-bottom: 20px;
-      }
-
-      .ab p {
-        line-height: 1.6;
-        font-size: 1rem;
-        text-align: justify;
-        padding: 0 20px;
+      
       }
       
+.ab p {
+  background-image: url("images/pback.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 800px;
+  line-height: 1.6;
+  font-size: 1rem;
+  text-align: justify;
+  color: #222; /* optional — adjust if text contrast is low */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px;
+}
