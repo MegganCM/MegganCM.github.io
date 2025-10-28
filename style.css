@@ -434,7 +434,7 @@ nav {
 
 /* The rectangular header box */
 .year-header {
-  background-image: url("images/YearHeaders.png");
+  background-image: url("images/YEARHead.png");
   background-size: cover;          /* fills the box */
   background-position: center;
   background-repeat: no-repeat;
@@ -461,7 +461,7 @@ nav {
 }
 /* === SECTION HEADERS (Only for artwork-page) === */
 .artwork-page .section-header {
-  background-image: url("images/YearHeaders.png");
+  background-image: url("images/YEARHead.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -498,7 +498,7 @@ nav {
 }
 /* === SECTION HEADERS (Only for Year One page) === */
 .yearone-page .section-header {
-  background-image: url("images/YearHeaders.png");
+  background-image: url("images/YEARHead.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -715,7 +715,7 @@ nav {
 .year-one .section-header,
 .art1010 .section-header,
 .art2310 .section-header {
-  background-image: url("images/YearHeaders.png");
+  background-image: url("images/YEARHead.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
