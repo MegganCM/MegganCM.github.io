@@ -498,7 +498,7 @@ nav {
 }
 /* === SECTION HEADERS (Only for Year One page) === */
 .yearone-page .section-header {
-  background-image: url("images/YearHeader.png");
+  background-image: url("images/YearHeaders.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
